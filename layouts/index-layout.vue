@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div class="h-screen">
+  <div class="min-h-screen h-full">
     <navbar />
-    <div class="h-full">
+    <div class="min-h-screen h-full">
       <slot></slot>
     </div>
   </div>

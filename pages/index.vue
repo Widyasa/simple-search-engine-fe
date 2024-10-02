@@ -29,7 +29,7 @@ const performSearch = () => {
                 v-model="query"
                 type="text"
                 class="w-full focus:outline-none text-lg text-gray-900 dark:text-gray-100 bg-transparent"
-                placeholder="Search Google"
+                placeholder="Search Messi Browser"
             />
             <button type="submit" class="ml-2">
               <svg

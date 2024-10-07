@@ -14,8 +14,8 @@ const performSearch = () => {
 }
 </script>
 <template>
-  <div :class="darkMode.value === true ? 'dark' : ''" class="h-full">
-    <div class="flex flex-col items-center justify-center h-full bg-white dark:bg-gray-900">
+  <div :class="darkMode.value === true ? 'dark' : ''" class="min-h-screen h-full">
+    <div class="flex flex-col items-center justify-center min-h-screen h-full bg-white dark:bg-gray-900">
       <!-- Google logo -->
       <div class="mb-8">
         <h1 class="text-5xl font-bold text-gray-800 dark:text-gray-200">Abang Messi</h1>

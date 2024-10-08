@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import {darkMode} from "~/utils/globalVariable";
 definePageMeta({
   layout: 'index-layout'
 })
@@ -12,6 +13,11 @@ const performSearch = () => {
     router.push({ path: '/search', query: { q: query.value } })
   }
 }
+onBeforeMount(() => {
+  if (!darkMode) {
+    localStorage.setItem('darkMode', false)
+  }
+})
 </script>
 <template>
   <div :class="darkMode.value === true ? 'dark' : ''" class="min-h-screen h-full">

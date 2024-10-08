@@ -1,1 +1,1 @@
-export const darkMode = ref(localStorage.getItem('darkMode'))
+    export const darkMode = ref(localStorage.getItem('darkMode'))

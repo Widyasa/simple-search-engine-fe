@@ -14,7 +14,7 @@ const performSearch = () => {
   }
 }
 onBeforeMount(() => {
-  if (!darkMode) {
+  if (darkMode.value == null) {
     localStorage.setItem('darkMode', false)
   }
 })
